@@ -1,0 +1,43 @@
+﻿<Window x:Class="AddDataApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        mc:Ignorable="d ignore"
+        Height="256"
+        Width="276"
+        Title="AddDataApp by Sascha Böck"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TabPanel Margin="5">
+                <Label Width="70" Content="Target:"/>
+                <ComboBox Width="170">
+
+                </ComboBox>
+            </TabPanel>
+            <TabPanel Margin="5">
+                <Label Width="70" Content="Name:"/>
+                <TextBox Width="170"/>
+            </TabPanel>
+            <TabPanel Margin="5">
+                <Label Width="70" Content="Type:"/>
+                <ComboBox Width="170">
+
+                </ComboBox>
+            </TabPanel>
+            <TabPanel Margin="5">
+                <Label Width="70" Content="Salary:"/>
+                <TextBox Width="170"/>
+            </TabPanel>
+            <TabPanel Margin="5">
+                <Label Width="70" Content="Key:"/>
+                <CheckBox Width="170" VerticalAlignment="Center"/>
+            </TabPanel>
+            <Button Content="Save" Margin="5" Width="70" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

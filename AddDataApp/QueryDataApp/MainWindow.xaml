@@ -1,0 +1,33 @@
+﻿<Window x:Class="QueryDataApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        mc:Ignorable="d ignore"
+        Height="350"
+        Width="525"
+        Title="App by Sascha Böck"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="88*"/>
+        </Grid.RowDefinitions>
+
+        <TabPanel Margin="10">
+            <Label Content="Source:"/>
+            <ComboBox Margin="15,0,-90.8,-1.4"></ComboBox>
+        </TabPanel>
+
+        <DataGrid Grid.Row="1" Margin="10" AutoGenerateColumns="False">
+            
+        </DataGrid>
+
+    </Grid>
+
+
+
+    
+</Window>
